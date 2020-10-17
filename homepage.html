@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+        color:rgb(95,99,104);
+        font-family:sans serif;
+        font-size: 13px;
+        display:flex;
+        flex-direction: column;
+        }
+
+        header{
+            display:flex;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            display:flex;
+            width: 50%;
+            align-items: center;
+            height:25px;
+        }
+        #rightheadernav{
+            justify-content: end;
+        }
+        li{
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+
+        main{
+            display:flex;
+            flex-direction: column;
+            flex:1;
+        }
+
+        #logo {
+            display:flex;
+            width:100%;
+            justify-content: center;
+            margin-top: 8em;
+        }
+
+        #bar {
+            display:flex;
+            justify-content: center;
+        }
+        #buttons{
+            display:flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            footer a {
+                float:none;
+                width:100%;
+            }
+            
+        }
+
+        footer {
+            display:flex;
+            flex-direction: row;
+            background-color: rgb(242,242,242);
+            position: fixed;
+            width: 100%;
+            left:0;
+            bottom:0;
+
+        }
+
+        #lfnav{
+            display:flex;
+            width: 50%;
+            justify-content: left
+
+        }
+        #rfnav{
+            display:flex;
+            width:50%;
+            justify-content: right;
+
+        }
+    
+    
+
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <ul id=leftheadernav>
+            <li><a>About</a></li>
+            <li>Store</li>
+
+        </ul>
+        <ul id=rightheadernav>
+            <li>Gmail</li>
+            <li>Images</li>
+            <img style="width:15px" src="https://www.flaticon.com/svg/static/icons/svg/56/56844.svg">
+            <input type="button" value="Sign In">
+        </ul>
+
+    </header>
+
+    <main>
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <div id="bar">
+            <input type="search">
+        </div>
+        <div id="buttons">
+            <input type="button" value="Google Search">
+            <input type="button" value="I'm Feeling Lucky"> 
+        </div>
+    </main>
+
+    <footer>
+        <ul id="lfnav">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li>
+        </ul>
+        <ul id="rfnav">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </footer>
+</body>

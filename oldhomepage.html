@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    body {
+        color:rgb(95,99,104);
+        font-family:sans serif;
+        font-size: 13px;
+    }
+
+    #nav {
+        display: flex;
+    }
+
+    .leftnav {
+        width: 50%;
+        display: flex;
+        flex-direction: flex-start;
+        background-color: blue;
+    }
+
+    .rightnav {
+        width:50%;
+        display:flex;
+        justify-content: right;
+    }
+
+    #search {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo {
+        display:flex;
+        justify-content: center;
+
+    }
+    #footer {
+        justify-content: center;
+        display:flex;
+        background-color:rgb(242,242,242)
+
+    }
+    .footercontent{
+        justify-content: space-between;
+
+    }
+    </style>
+
+</head>
+    
+<body>
+    <nav id="nav">
+        <ul class"leftnav">
+            <div>
+                About 
+            </div>
+            <div>
+                Store
+            </div>
+        </ul>
+        <ul class="rightnav">
+            <div>
+                Gmail
+            </div>
+            <div>
+                Images
+            </div>
+            <div>
+             Apps
+            </div>
+            <div>   
+             Sign in
+            </div>
+        </ul>
+    </nav>
+
+    <search id="search">
+        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            Google Search
+        </div>
+        <div>
+            I'm feeling lucky
+        </div>
+    </search>
+
+    <footer id="footer">
+        <ul class="footercontent"> 
+            <ls>
+                Advertising
+            </ls>
+            <ls>
+                Business
+            </ls>
+            <ls>
+                How Search Works
+            </ls>
+            <ls>
+                Privacy
+            </ls>
+            <ls>
+                Terms
+            </ls>
+            <ls>
+                Settings
+            </ls>
+        </ul>
+    </footer>
+</body>
